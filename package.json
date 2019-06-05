@@ -32,7 +32,11 @@
     "filesystem",
     "file-system"
   ],
-  "author": "https://github.com/Drozerah",
+  "author": {
+    "name": "Thomas G. aka Drozerah",
+    "email": "drozerah@gmail.com",
+    "url": "https://github.com/Drozerah"
+  },
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.2",
@@ -43,8 +47,7 @@
   "homepage": "https://github.com/Drozerah/mkdird-cli.git",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Drozerah/mkdird-cli.git",
-    "email": "drozerah@gmail.com"
+    "url": "https://github.com/Drozerah/mkdird-cli.git"
   },
   "bugs": {
     "url": "https://github.com/Drozerah/mkdird-cli/issues"
