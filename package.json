@@ -46,7 +46,8 @@
     "url": "https://github.com/Drozerah/mkdird-cli.git",
     "email": "drozerah@gmail.com"
   },
-  "bugs": "https://github.com/Drozerah/mkdird-cli/issues",
+  "bugs": {
+    "url": "https://github.com/Drozerah/mkdird-cli/issues"
+  },
   "private": false
-  
 }
