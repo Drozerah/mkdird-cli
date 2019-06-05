@@ -217,7 +217,7 @@ commands
   run()
 })
 .command(['docs'], `Open in browser ${name} documentation page`, {}, _ => {
-  open(repository.url+ '#mkdird-cli')
+  open(repository.url + '#mkdird-cli')
 })
 .command(['specs'], `Open in browser ${name} specifications page`, {}, _ => {
   open(repository.url + '#specifications')
