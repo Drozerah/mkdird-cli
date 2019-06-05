@@ -217,10 +217,10 @@ commands
   run()
 })
 .command(['docs'], `Open in browser ${name} documentation page`, {}, _ => {
-  open(repository.url + '#mkdird-cli')
+  open(homepage + '#mkdird-cli')
 })
 .command(['specs'], `Open in browser ${name} specifications page`, {}, _ => {
-  open(repository.url + '#specifications')
+  open(homepage + '#specifications')
 })
 .command(['home'], `Open in browser ${name} NPM home page`, {}, _ => {
   open('https://www.npmjs.com/package/mkdird')    
