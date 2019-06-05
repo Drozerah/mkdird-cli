@@ -226,7 +226,7 @@ commands
   open('https://www.npmjs.com/package/mkdird')    
 })
 .command(['issues'], `Open in browser ${name} issues page on GitHub`, {}, _ => {
-  open(`${bugs}`)    
+  open(`${bugs.url}`)    
 })
 .command(['author'], `Open in browser ${name} author page on GitHub`, {}, _ => {
   open(`${author}`)
