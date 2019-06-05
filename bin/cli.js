@@ -229,7 +229,7 @@ commands
   open(`${bugs.url}`)    
 })
 .command(['author'], `Open in browser ${name} author page on GitHub`, {}, _ => {
-  open(`${author}`)
+  open(`${author.url}`)
 })
 .alias('v', 'version')
 .alias('h', 'help')
