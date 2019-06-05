@@ -1,0 +1,52 @@
+{
+  "name": "mkdird",
+  "bin": {
+    "mkdird": "bin/cli.js"
+  },
+  "version": "1.0.5",
+  "description": "Make a directory on your OS's desktop with mkdird CLI",
+  "main": "bin/cli.js",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "engines": {
+    "node": ">=10.15.3"
+  },
+  "keywords": [
+    "cli",
+    "desk",
+    "desktop",
+    "mkdir",
+    "mkdirp",
+    "mkdird",
+    "make",
+    "directories",
+    "dir",
+    "dirs",
+    "folders",
+    "directory",
+    "folder",
+    "path",
+    "create",
+    "fs",
+    "filesystem",
+    "file-system"
+  ],
+  "author": "https://github.com/Drozerah",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "inquirer": "^6.3.1",
+    "open": "^6.3.0",
+    "yargs": "^13.2.4"
+  },
+  "homepage": "https://github.com/Drozerah/mkdird-cli.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Drozerah/mkdird-cli.git",
+    "email": "drozerah@gmail.com"
+  },
+  "bugs": "https://github.com/Drozerah/mkdird-cli/issues",
+  "private": false
+  
+}
