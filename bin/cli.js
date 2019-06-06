@@ -198,7 +198,7 @@ const run = () => {
         /**
          * handle error
          */
-        console.log(red("ERROR: " + err))
+        // console.log(red("ERROR: " + err))
       }
     }
   )
