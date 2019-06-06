@@ -80,8 +80,9 @@ __Built with__
 
 
 </details>
+<br>
 
-#####Versioning
+__Versioning__
 
 - we use [SemVer](http://semver.org/) for versioning
 
