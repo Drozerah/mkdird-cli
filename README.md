@@ -1,11 +1,7 @@
-Cross platform Command Line Interface utility with Node.js
-<h1 align="center">
+_Cross platform Command Line Interface utility with Node.js_
+<h1 align="center" style="border:none !important;">
   mkdird-cli
 </h1>
-
-<div align="center" style="font-style:italic;margin-bottom:20px;">
-
-</div>
 
 <div align="center">
 
@@ -13,33 +9,33 @@ Cross platform Command Line Interface utility with Node.js
 
 </div>
 
-> Make a directory on your OS's desktop : think **mkdird**~~esktop~~
+__Make a directory on your OS's desktop: think **mkdird**~~esktop~~__
 
 - install mkdird-cli (see below)
 - Launch `mkdird run` command anywhere in terminal
-- select the `yes` option to proceed
+- select the `yes` option to proceed (use your keyboard arrow keys)
 - give your new directory a name **\***
 
-Check your desktop - you are ready to go !
+Check your desktop - you are ready to go!
 
 
 ![mkdird image](https://raw.githubusercontent.com/Drozerah/MyGitHubStorage/master/img/mkdird-cli/mkdird-cli.gif)
 
 **\*** mkdird-cli will check if the path to create is valid, see [specifications](#specifications) section for more informations
 
-## Install
+__Install__
 
 We recommend to install mkdird-cli globally 
 ````bash
 $ npm install mkdird --global
 ````
 
-## Usage
+__Usage__
 
 ````bash
 $ mkdird run
 ````
-## Help
+__Help__
 
 ````bash
 $ mkdird --help
@@ -60,26 +56,41 @@ Options:
 
 ````
 
-## Specifications
 
-- Coming soon !
+__Specifications__<a name="specifications"></a>
 
-## Fork it !
+- Coming soon!
 
-- Coming soon !
+__Fork it !__
 
-## Versioning
+- Coming soon!
+
+__Built with__
+<details>
+  <summary>Click to expand!</summary>
+
+- [chalk](https://www.npmjs.com/package/chalk#readme)
+- [inquirer](https://github.com/SBoudrias/Inquirer.js#readme)
+- [open](https://github.com/sindresorhus/open/#readme)
+- [yargs](https://yargs.js.org/)
+- [Node.js](https://nodejs.org/en/)
+- [NPM](https://www.npmjs.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+
+</details>
+
+#####Versioning
 
 - we use [SemVer](http://semver.org/) for versioning
 
-## NPM home page
+__NPM home page__
 
 - [mkdird](https://www.npmjs.com/package/mkdird)
 
-## Author
+__Author__
 
 - Thomas G. aka Drozerah - [GitHub](https://github.com/Drozerah)
 
-## License
+__License__
 
 - [ISC](licence) © Thomas G. aka Drozerah
