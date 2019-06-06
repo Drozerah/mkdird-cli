@@ -42,6 +42,8 @@ $ mkdird --help
 ````
 
 ````
+Usage: mkdird <command> [options]
+
 Commands:
   mkdird run             Run mkdird CLI
   mkdird docs            Open in browser mkdird documentation page
@@ -55,13 +57,20 @@ Options:
   -h, --help     Show help             [boolean]
 
 ````
+__Annotation arguments in a command line__
+
+Syntax | Argument type | Explanation |
+------------ | ------------- | ------------- 
+cmd \<arg> | Required | The agurment `arg` is required  |
+cmd [arg] | Optional | The agurment `arg` is not required  |
+
 
 
 __Specifications__<a name="specs"></a>
 
 - Coming soon!
 
-__Fork it !__
+__Fork it!__
 
 - Coming soon!
 
