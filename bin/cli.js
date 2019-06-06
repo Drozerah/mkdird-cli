@@ -18,13 +18,14 @@ const {green, blue, red, yellow} = require('chalk')
 const inquirer = require('inquirer')
 const commands = require('yargs')
 const open = require('open')
+const check = require('update-check')
 
 /**
  * Modules
  */
 const _lib = require('./lib.js')
 const msg = require('./lang.js')
-const {name, description, author, bugs, homepage, repository} = require('../package.json')
+const {name, description, author, bugs, homepage, version} = require('../package.json')
 
 /**
  * Config
@@ -41,19 +42,66 @@ const MAX_PATH = 248
 const MAX_LENGTH = MAX_PATH - (osDesktopPath.length + path.sep.length)
 // is supporting msg
 const isSupportingMsg = true
+
+
+/**
+ * initialize some variables
+ */
 // create an object of EventEmitter class by using above reference
 const event = new events.EventEmitter()
+
 
 /**
  * Running mkdird-cli
  */
 const run = () => {
   async.series([
+
     callback => {
-        // Print Acknowledgments
-        console.log(blue(msg.Acknowledgments)) // msg
+
         /**
-         * Step 1: ask for user choice to continue
+         * Step 1: NPM package version checking
+         */
+
+        // get the current package version from package.json
+        const pkg = { name: name, version: version }
+
+        // Print Acknowledgments in any case
+        console.log(blue(msg.Acknowledgments)) // msg
+
+        // checking is resolved
+        const checkUpdate = (update) => {
+
+          if (update) { // new version is available
+
+            console.log(yellow(`${name}@${update.latest} is now available !\n> Run 'npm install -g ${name}'\n`))
+
+            callback(false, true) // we go to step: 2
+
+          } else { // package version is up to date
+
+            callback(false, false) // we go to step: 2
+
+          }
+        }
+
+        // checking is rejected
+        const logError = ({message}) => { // something went wrong into the silence !
+
+          // console.error(message)
+          callback(false, undefined) // we go to step: 2
+        }
+
+        /**
+         * Do the checking
+         */
+        check(pkg).then(checkUpdate, logError)
+
+    },
+    callback => {
+
+        /**
+         * Step 2: ask for user choice to continue
          */
         inquirer
           .prompt([ // prompt the user
@@ -64,7 +112,7 @@ const run = () => {
             }
           ])
         /**
-         * Step 1.1: get the user choice
+         * Step 2.1: get the user choice
          */ 
         .then( userChoice => {
 
@@ -91,7 +139,7 @@ const run = () => {
       },
       callback => {
         /**
-         * Step 2: ask the user directory name to create
+         * Step 3: ask the user directory name to create
          */
         inquirer
           .prompt([{ name: msg.question.projectName, validate: input => { // prompt the user
@@ -126,7 +174,7 @@ const run = () => {
             }
           ])
         /**
-         * step 2.1: working with user directory name
+         * step 3.1: working with user directory name
          */
         .then( answer => {
       
@@ -240,8 +288,11 @@ commands
 // Subscribe for Success (event listener)
 event.on('Success', results  => {
   
+  // console.log('\nDEBUG: ' + results)
+
   /**
    * Print success message with results data
    */
-  console.log(green(msg.ok.replace('userPath', results[1])))
+  console.log(green(msg.ok.replace('userPath', results[2])))
+
 })
