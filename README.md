@@ -67,6 +67,7 @@ __Fork it !__
 
 __Built with__
 <details>
+
   <summary>Click to expand!</summary>
 
 - [chalk](https://www.npmjs.com/package/chalk#readme)
@@ -76,6 +77,7 @@ __Built with__
 - [Node.js](https://nodejs.org/en/)
 - [NPM](https://www.npmjs.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
+
 
 </details>
 
