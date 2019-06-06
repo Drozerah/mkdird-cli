@@ -57,7 +57,7 @@ Options:
 ````
 
 
-__Specifications__<a name="specifications"></a>
+__Specifications__<a name="specs"></a>
 
 - Coming soon!
 
