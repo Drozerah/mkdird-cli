@@ -1,8 +1,22 @@
-# mkdird-cli
 
-_A cross platform Command Line Interface utility with Node.js_
+---
+<h1 align="center">
+  mkdird-cli
+</h1>
 
-> Make a directory on your OS's desktop : think **mkdird**~~esktop~~ 
+<div align="center" style="font-style:italic;margin-bottom:20px;">
+Cross platform Command Line Interface utility with Node.js
+</div>
+
+<div align="center">
+
+![npm](https://img.shields.io/npm/v/mkdird.svg?style=flat-square) ![node](https://img.shields.io/node/v/mkdird.svg?style=flat-square) ![GitHub issues](https://img.shields.io/github/issues/drozerah/mkdird-cli.svg?style=flat-square) ![GitHub pull requests](https://img.shields.io/github/issues-pr/drozerah/mkdird-cli.svg?style=flat-square) [![Known Vulnerabilities](https://snyk.io/test/github/Drozerah/mkdird-cli/badge.svg?style=flat-square)](https://snyk.io/test/github/Drozerah/mkdird-cli) ![NPM](https://img.shields.io/npm/l/mkdird.svg?style=flat-square) ![GitHub top language](https://img.shields.io/github/languages/top/drozerah/mkdird-cli.svg?style=flat-square) 
+
+</div>
+
+---
+
+> Make a directory on your OS's desktop : think **mkdird**~~esktop~~
 
 - install mkdird-cli (see below)
 - Launch `mkdird run` command anywhere in terminal
