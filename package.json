@@ -3,7 +3,7 @@
   "bin": {
     "mkdird": "bin/cli.js"
   },
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Make a directory on your OS's desktop with mkdird CLI",
   "main": "bin/cli.js",
   "scripts": {
