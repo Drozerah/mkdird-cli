@@ -21,7 +21,7 @@ Check your desktop - you are ready to go!
 
 ![mkdird image](https://raw.githubusercontent.com/Drozerah/MyGitHubStorage/master/img/mkdird-cli/mkdird-cli.gif)
 
-**\*** mkdird-cli will check if the path to create is valid, see [specifications](#specifications) section for more informations
+**\*** mkdird-cli will check if the path to create is valid, see [specifications](#specs) section for more informations
 
 __Install__
 
@@ -57,6 +57,7 @@ Options:
   -h, --help     Show help             [boolean]
 
 ````
+
 __Annotation arguments in a command line__
 
 Syntax | Argument type | Explanation |
@@ -83,6 +84,7 @@ __Built with__
 - [inquirer](https://github.com/SBoudrias/Inquirer.js#readme)
 - [open](https://github.com/sindresorhus/open/#readme)
 - [yargs](https://yargs.js.org/)
+- [update-check](https://www.npmjs.com/package/update-check)
 - [Node.js](https://nodejs.org/en/)
 - [NPM](https://www.npmjs.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
