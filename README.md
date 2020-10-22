@@ -107,4 +107,4 @@ __Author__
 
 __License__
 
-- [ISC](licence) © Thomas G. aka Drozerah
+- [MIT](https://github.com/Drozerah/mkdird-cli/blob/master/LICENSE) © Thomas G. aka Drozerah
