@@ -3,7 +3,7 @@
   "bin": {
     "mkdird": "bin/cli.js"
   },
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Make a directory on your OS's desktop with mkdird CLI",
   "main": "bin/cli.js",
   "scripts": {
@@ -40,10 +40,10 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.2",
-    "inquirer": "^6.3.1",
-    "open": "^6.3.0",
-    "update-check": "^1.5.3",
-    "yargs": "^13.2.4"
+    "inquirer": "^6.5.2",
+    "open": "^6.4.0",
+    "update-check": "^1.5.4",
+    "yargs": "^13.3.2"
   },
   "homepage": "https://github.com/Drozerah/mkdird-cli.git",
   "repository": {
